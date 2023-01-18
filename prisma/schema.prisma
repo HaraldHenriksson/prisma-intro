@@ -16,7 +16,7 @@ model User {
   age Int
   email String @unique
   role Role @default(BASIC)
-  largeNumber BigInt
+  largeNumber BigInt?
   writtenPosts Post[] @relation("WrittenPosts")
   favoritePosts Post[] @relation("FavoritePosts")
   UserPreference UserPreference?
